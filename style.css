@@ -1,0 +1,170 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  overflow: hidden;
+  display: grid;
+  align-items: center;
+}
+
+.inst{
+  position: absolute;
+  display: grid;
+  grid-template-rows: max-content;
+  background-color:rgb(218, 142, 0);
+  z-index: 1000;
+  width: 30%;
+  align-self: center;
+  justify-self: center;
+  row-gap: 20px;
+  padding: 20px;
+  justify-content: center;
+  border-radius: 5px;
+}
+.instrem{
+  display: none;
+}
+.head{
+  font-size: 30px;
+  justify-self: center;
+}
+.details{
+  justify-self: center;
+}
+.gotit{
+  justify-self: center;
+}
+
+.popup {
+  display: none;
+  grid-template-rows: max-content;
+  row-gap: 20px;
+  z-index: 1000;
+  position: absolute;
+  width: 30%;
+  justify-self: center;
+  background-color: rgb(218, 142, 0);
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.add {
+  display: grid;
+}
+
+.link{
+  border:none;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.link:hover{
+  background-color: black;
+  color: white; 
+}
+
+.header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 25px;
+}
+.close{
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  height: fit-content;
+  transition: 0.3s;
+}
+.close:hover{
+  background-color: black;
+  color: white;
+}
+
+.content{
+  display: grid;
+  grid-template-rows: max-content;
+  row-gap: 10px;
+ 
+}
+.link{
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  height: fit-content;
+  width: fit-content;
+  
+}
+
+a{
+  justify-self: center;
+}
+
+.contr{
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .inst{
+    width: 70%;
+  }
+  .contr{
+    display: grid;
+    position: absolute;
+    z-index: 100;
+    width: 150px;
+    height: fit-content;
+    bottom: 15px;
+    right: 15px;
+    justify-self: center;
+    row-gap:7px;
+  }
+  
+  .oii{
+    border: none;
+    border-radius: 2px;
+    background-color: rgb(218, 142, 0);
+    width: fit-content;
+    height: fit-content;
+    font-size: 30px;
+    transition: 0.1s;
+    
+  }
+  .oii:active{
+    background-color: black;
+    color: white;
+    
+  }
+
+  .middle{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: fit-content;
+  }
+  .up{
+    position: relative;
+    top: 0px;
+    justify-self: center;
+
+  }
+  .down{
+    position: relative;
+    bottom: 0px;
+    justify-self: center;
+  }
+
+  .up,.down{
+    padding: 7px 9px;
+  }
+  .left,.right{
+    padding: 0px 9px ;
+    height: fit-content;
+  }
+
+  .popup {
+    width: 70%;
+  }
+
+}
